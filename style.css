@@ -19,7 +19,7 @@ header {
     align-items: center;
     padding: 30px 10%;
     background: #4c7dfe;
-    background: linear-gradient(172deg, rgba(63, 53, 243, 1) 0%, rgba(76, 125, 254, 1) 39%, rgba(0, 212, 255, 1) 100%);
+    /* background: linear-gradient(172deg, rgba(63, 53, 243, 1) 0%, rgba(76, 125, 254, 1) 39%, rgba(0, 212, 255, 1) 100%); */
 }
 
 .logo {
