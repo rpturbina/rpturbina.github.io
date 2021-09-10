@@ -203,7 +203,7 @@ article p {
 }
 
 #project img {
-    max-width: 10%;
+    max-width: 100%;
 }
 
 .project-item.img:hover {
