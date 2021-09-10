@@ -197,16 +197,16 @@ article p {
 }
 
 .project-item {
-    flex-basis: 50%;
+    flex-basis: 48%;
     margin-bottom: 4%;
-}
-
-#project img {
-    max-width: 48%;
     transition: all 0.3s ease 0s;
 }
 
-#project img:hover {
+#project img {
+    max-width: 100%;
+}
+
+.project-item.img:hover {
     transform: scale(1.05);
 }
 
@@ -456,11 +456,16 @@ footer div ul h2 {
 
 
     /* Project Container */
-    .project-item {
+    .project-item.content {
         flex-basis: 100%;
+        text-align: center;
     }
 
-    #project br {
+    .project-item.img {
+        flex-basis: 48%;
+    }
+
+    .project-item br {
         display: none;
     }
 
@@ -505,16 +510,21 @@ footer div ul h2 {
         justify-content: center;
     }
 
+    .project-item.img {
+        flex-basis: 80%;
+    }
+
     .project-item.content {
         text-align: center;
+        margin-bottom: 10%;
     }
 
     #project img {
-        max-width: 75%;
+        max-width: 100%;
         margin-bottom: 20px;
     }
 
-    #project span.subtitle br {
+    #project br {
         display: inline;
     }
 
