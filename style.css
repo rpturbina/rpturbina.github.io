@@ -257,6 +257,10 @@ aside a:last-child {
     transition: all 0.3s ease 0s;
 }
 
+.contact-item a:last-child img {
+    display: none;
+}
+
 .contact-item img:hover {
     transform: scale(1.2);
     opacity: 0.75;
@@ -288,6 +292,7 @@ aside a:last-child {
     min-height: 200px;
     padding: 50px;
     margin-bottom: 50px;
+    display: none
 }
 
 .identity-container img {
@@ -547,6 +552,10 @@ footer div ul h2 {
     /* Contact Container */
     .contact-container {
         justify-content: center;
+    }
+
+    .contact-container .contact-item {
+        width: 100%;
     }
 
     .contact-item {
