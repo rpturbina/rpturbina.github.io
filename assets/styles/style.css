@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
 
-* {
+:root {
+    --blue: #14539a;
+}
+
+*,
+*::after,
+*::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,6 +18,7 @@ html {
 
 body {
     font-family: Poppins, sans-serif;
+    line-height: 1.5;
 }
 
 
@@ -23,15 +30,17 @@ header {
     align-items: center;
     padding: 10px 10%;
     position: fixed;
+    z-index: 1;
     width: 100%;
-    height: 10vh;
+    height: 75px;
     background-color: #fff;
     box-shadow: 0px 1px 10px #999;
 }
 
+
 .logo {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     margin-right: auto;
     cursor: pointer;
@@ -45,28 +54,27 @@ header {
 
 nav {
     position: relative;
-    left: 15px;
+    left: 25px;
 }
 
 nav a {
     text-decoration: none;
     padding: 10px 15px;
-    color: #4c7dfe;
+    color: var(--blue);
     font-weight: 500;
-    letter-spacing: 1px;
     border-radius: 8px;
     transition: all 0.3s ease 0s;
 }
 
 nav a:hover {
     color: #fff;
-    background-color: #4c7dfe;
+    background-color: var(--blue);
     border-radius: 10px;
 }
 
 nav li {
     display: inline-block;
-    margin-left: 30px;
+    margin-left: 16px;
 }
 
 
@@ -74,23 +82,21 @@ nav li {
 
 .button {
     display: inline-block;
-    width: 130px;
     text-align: center;
     text-decoration: none;
     padding: 10px 15px;
-    border: 1px solid #4c7dfe;
+    border: 1px solid var(--blue);
     border-radius: 8px;
     color: white;
-    background-color: #4c7dfe;
+    background-color: var(--blue);
     font-weight: 500;
-    font-size: 14px;
     margin-right: 25px;
     transition: all 0.3s ease 0s;
 }
 
 .button:hover {
     background-color: white;
-    color: #4c7dfe;
+    color: var(--blue);
 }
 
 .button-container {
@@ -101,7 +107,7 @@ nav li {
 /* Container Text Style */
 
 article h2 {
-    color: #4c7dfe;
+    color: var(--blue);
     font-size: 20px;
     margin-bottom: 5px;
     letter-spacing: 0.7px;
@@ -130,10 +136,6 @@ article p {
     align-items: center;
 }
 
-.home-item {
-    flex-basis: 50%;
-}
-
 .home-item.img {
     display: flex;
     justify-content: flex-end;
@@ -153,7 +155,7 @@ article p {
 .featured {
     display: none;
     justify-content: space-evenly;
-    background: #4c7dfe;
+    background: var(--blue);
     padding: 40px 0;
     color: white;
 }
@@ -175,8 +177,7 @@ article p {
 /* Container About Me */
 
 .about-container {
-    display: flex;
-    justify-content: space-between;
+    display: none;
     align-items: center;
 }
 
@@ -185,14 +186,14 @@ article p {
 }
 
 #about-me img {
-    max-width: 75%;
+    max-width: 100%;
 }
 
 
 /* Container Project */
 
 .project-container {
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -216,7 +217,7 @@ article p {
 
 aside header {
     color: white;
-    background-color: #4c7dfe;
+    background-color: var(--blue);
     padding: 60px 10%;
 }
 
@@ -273,7 +274,7 @@ aside a:last-child {
 
 #contact a {
     text-decoration: none;
-    color: #4c7dfe;
+    color: var(--blue);
     font-weight: 500;
     transition: all 0.3s ease 0s;
 }
@@ -286,7 +287,7 @@ aside a:last-child {
 /* Identity Container */
 
 .identity-container {
-    color: #4c7dfe;
+    color: var(--blue);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -315,7 +316,7 @@ aside a:last-child {
 /* Footer */
 
 footer {
-    background-color: #4c7dfe;
+    background-color: var(--blue);
     padding: 30px 0px;
 }
 
@@ -345,7 +346,7 @@ footer {
 }
 
 .container ul li a:hover {
-    color: #4c7dfe;
+    color: var(--blue);
     background-color: white;
 }
 
