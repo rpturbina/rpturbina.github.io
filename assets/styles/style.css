@@ -2,6 +2,7 @@
 
 :root {
     --blue: #14539a;
+    --darkgrey: #36363c;
 }
 
 *,
@@ -26,7 +27,7 @@ body {
 
 header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     padding: 10px 10%;
     position: fixed;
@@ -37,12 +38,15 @@ header {
     box-shadow: 0px 1px 10px #999;
 }
 
+header>a {
+    height: 40px;
+}
+
 
 .logo {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    margin-right: auto;
     cursor: pointer;
     transition: all 0.3s ease 0s;
 }
@@ -109,18 +113,14 @@ nav li {
 article h2 {
     color: var(--blue);
     font-size: 20px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     letter-spacing: 0.7px;
 }
 
-.subtitle {
-    font-weight: 700;
-    font-size: 33px;
-}
-
 article p {
-    font-size: 15px;
-    margin-top: 10px;
+    font-size: 18px;
+    margin: 20px 0;
+    color: var(--darkgrey);
 }
 
 
@@ -130,6 +130,8 @@ article p {
     padding: 0px 10%;
     min-height: 100vh;
 }
+
+
 
 .home-container {
     display: flex;
@@ -141,12 +143,34 @@ article p {
     justify-content: flex-end;
 }
 
-#home img {
-    max-width: 75%;
+
+.home-item .subtitle {
+    color: var(--blue);
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 2px;
 }
 
-#home span {
+.home-item h1 {
+    font-size: 20px;
+    color: var(--darkgrey);
+}
+
+.home-item .hi-emoji {
     font-size: 40px;
+}
+
+.home-item img {
+    margin-top: 15px;
+    margin-right: 20px;
+    height: 30px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.3s ease 0s;
+}
+
+.home-item img:hover {
+    opacity: 1;
 }
 
 
@@ -241,27 +265,21 @@ aside a:last-child {
 
 .contact-container {
     display: flex;
-    justify-content: space-between;
+    text-align: center;
+    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    min-height: 190px;
+    min-height: 200px;
     margin-bottom: 40px;
 }
 
-.contact-item.content {
-    flex-basis: 75%;
-}
 
 .contact-item img {
-    margin-left: 15px;
+    margin: 15px;
     width: 25px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
 }
 
-.contact-item a:last-child img {
-    display: none;
-}
 
 .contact-item img:hover {
     transform: scale(1.2);
@@ -269,7 +287,12 @@ aside a:last-child {
 }
 
 .contact-item p {
-    font-size: 15px;
+    font-size: 17px;
+    color: var(--darkgrey);
+}
+
+.contact-item h2 {
+    color: var(--darkgrey);
 }
 
 #contact a {
@@ -321,7 +344,7 @@ footer {
 }
 
 .container {
-    display: flex;
+    display: none;
     justify-content: space-between;
     padding: 0 10%;
 }
@@ -352,7 +375,6 @@ footer {
 
 footer p {
     text-align: center;
-    margin-top: 10px;
     font-size: 14px;
     color: whitesmoke;
 }
@@ -372,6 +394,10 @@ footer p {
     letter-spacing: 1px;
     font-weight: 500;
     font-size: 20px;
+}
+
+footer .container {
+    justify-content: center;
 }
 
 footer div ul h2 {
