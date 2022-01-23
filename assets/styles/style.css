@@ -121,9 +121,8 @@ article p {
 /* Container Home's Hero */
 
 .card {
-    padding: 50px 10%;
-    min-width: 768px;
-    min-height: 600px;
+    padding: 0px 10%;
+    min-height: 100vh;
 }
 
 .home-container {
@@ -152,10 +151,9 @@ article p {
 /* Container Featured */
 
 .featured {
-    display: flex;
+    display: none;
     justify-content: space-evenly;
     background: #4c7dfe;
-    /* background: linear-gradient(172deg, rgba(63, 53, 243, 1) 0%, rgba(76, 125, 254, 1) 39%, rgba(0, 212, 255, 1) 100%); */
     padding: 40px 0;
     color: white;
 }
@@ -243,7 +241,7 @@ aside a:last-child {
 .contact-container {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
     flex-wrap: wrap;
     min-height: 190px;
     margin-bottom: 40px;
@@ -318,9 +316,7 @@ aside a:last-child {
 
 footer {
     background-color: #4c7dfe;
-    /* background: linear-gradient(172deg, rgba(63, 53, 243, 1) 0%, rgba(76, 125, 254, 1) 39%, rgba(0, 212, 255, 1) 100%); */
-    padding-bottom: 20px;
-    padding-top: 40px;
+    padding: 30px 0px;
 }
 
 .container {
@@ -355,7 +351,7 @@ footer {
 
 footer p {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 10px;
     font-size: 14px;
     color: whitesmoke;
 }
