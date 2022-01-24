@@ -58,8 +58,7 @@ header {
     width: 100%;
     height: 90px;
 }
-
-header > a:first-child {
+.logo-wrapper {
     height: 40px;
     width: 103px;
 }
@@ -286,7 +285,7 @@ footer p {
 /* ukuran tablet */
 @media screen and (max-width: 768px) {
     /* Header */
-    header > a:first-child {
+    .logo-wrapper {
         width: -webkit-fit-content;
         width: -moz-fit-content;
         width: fit-content;
