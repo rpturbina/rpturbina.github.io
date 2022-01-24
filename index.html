@@ -29,31 +29,36 @@
         />
         <meta name="twitter:creator" content="rpturbina" />
         <link rel="stylesheet" href="/assets/styles/style.css" />
-        <link rel="stylesheet" href="/assets/styles/responsive.css" />
         <link
             rel="icon"
             type="image/png"
             href="https://avatars.githubusercontent.com/u/75988104?v=4"
         />
     </head>
-    <body>
+    <body class="">
         <header>
             <a href="#home">
                 <img
                     src="assets/image/profil-picture-pratama.jpg"
                     class="logo"
-                    alt=""
+                    alt="Go to my home's website"
                 />
+            </a>
+            <a class="darkmode-toggle">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <div class="ball ball-position"></div>
             </a>
             <nav>
                 <ul>
                     <!-- <li><a href="#about-me">About</a></li>
-                    <li><a href="#project">Project</a></li>
-                    <li><a href="#contact">Contact</a></li> -->
+                        <li><a href="#project">Project</a></li>
+                        <li><a href="#contact">Contact</a></li> -->
                     <li>
                         <a
                             href="https://bit.ly/resume-pratama"
                             target="_blank"
+                            rel="noreferrer"
                             class="button"
                             >Resume</a
                         >
@@ -90,19 +95,33 @@
                         <strong>software engineering (frontend). </strong>
                     </p>
                     <div class="home-item icon">
-                        <a href="https://github.com/rpturbina" target="_blank"
-                            ><img src="assets/image/github.svg" alt=""
+                        <a
+                            href="https://github.com/rpturbina"
+                            target="_blank"
+                            rel="noreferrer"
+                            ><img
+                                src="assets/image/github.svg"
+                                alt="Go to my github"
                         /></a>
                         <a
                             href="https://www.linkedin.com/in/rpturbina"
                             target="_blank"
-                            ><img src="assets/image/linkedin.svg" alt=""
+                            rel="noreferrer"
+                            ><img
+                                src="assets/image/linkedin.svg"
+                                alt="Go to my linkedin"
                         /></a>
-                        <a href="https://www.instagram.com/rpturbina/"
-                            ><img src="assets/image/instagram.svg" alt=""
+                        <a
+                            href="https://www.instagram.com/rpturbina/"
+                            rel="noreferrer"
+                            ><img
+                                src="assets/image/instagram.svg"
+                                alt="Go to my instagram"
                         /></a>
                         <a href="mailto:rizki.pratama.turbina@gmail.com"
-                            ><img src="assets/image/email.png" alt=""
+                            ><img
+                                src="assets/image/email.png"
+                                alt="Send email to me"
                         /></a>
                     </div>
                 </div>
@@ -124,5 +143,10 @@
         <footer>
             <p>Made with 🤍 by rpturbina © 2022</p>
         </footer>
+        <script
+            src="https://kit.fontawesome.com/39b200de84.js"
+            crossorigin="anonymous"
+        ></script>
+        <script src="src/darkmode.js"></script>
     </body>
 </html>
