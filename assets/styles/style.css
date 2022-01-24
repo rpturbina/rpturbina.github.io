@@ -1,8 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
 
 :root {
-    --blue: #14539a;
-    --darkgrey: #36363c;
+    --clr-light: #fff;
+    --clr-dark: #36363c;
+    --clr-primary: #14539a;
+    --clr-sun: #fdd641;
+
+    --foreground: var(--clr-dark);
+    --background: var(--clr-light);
+    --primary: var(--clr-primary);
+}
+
+.darkmode {
+    --clr-light: hsla(0, 0%, 90%, 1);
+    --clr-dark: #36363c;
+    --clr-primary: hsl(211, 100%, 63%);
+
+    --foreground: var(--clr-light);
+    --background: var(--clr-dark);
+    --primary: var(--clr-light);
 }
 
 *,
@@ -18,15 +34,17 @@ html {
 }
 
 body {
+    background-color: var(--background);
     font-family: Poppins, sans-serif;
     line-height: 1.5;
+    letter-spacing: 1px;
+    transition: all 0.25s ease-in-out;
 }
 
 main {
     width: 100%;
     min-height: 100vh;
 }
-
 
 /* Navbar */
 
@@ -38,14 +56,13 @@ header {
     position: fixed;
     z-index: 1;
     width: 100%;
-    height: 75px;
-    background-color: #fff;
+    height: 90px;
 }
 
-header>a {
+header > a:first-child {
     height: 40px;
+    width: 103px;
 }
-
 
 .logo {
     width: 40px;
@@ -60,31 +77,21 @@ header>a {
     opacity: 0.8;
 }
 
-nav {
-    position: relative;
-    left: 25px;
-}
-
 nav a {
     text-decoration: none;
     padding: 10px 15px;
-    color: var(--blue);
     font-weight: 500;
     border-radius: 8px;
     transition: all 0.3s ease 0s;
 }
 
 nav a:hover {
-    color: #fff;
-    background-color: var(--blue);
     border-radius: 10px;
 }
 
 nav li {
     display: inline-block;
-    margin-left: 16px;
 }
-
 
 /* Button */
 
@@ -93,40 +100,66 @@ nav li {
     text-align: center;
     text-decoration: none;
     padding: 10px 15px;
-    border: 1px solid var(--blue);
+    border: 1px solid var(--primary);
     border-radius: 8px;
-    color: white;
-    background-color: var(--blue);
+    color: var(--background);
+    background-color: var(--primary);
     font-weight: 500;
-    margin-right: 25px;
     transition: all 0.3s ease 0s;
 }
 
 .button:hover {
-    background-color: white;
-    color: var(--blue);
+    background-color: var(--background);
+    color: var(--primary);
 }
 
 .button-container {
     margin-top: 25px;
 }
 
-
-/* Container Text Style */
-
-article h2 {
-    color: var(--blue);
-    font-size: 20px;
-    margin-bottom: 10px;
-    letter-spacing: 0.7px;
+/* Darkmode Toogle */
+.darkmode-toggle {
+    cursor: pointer;
+    display: flex;
+    width: 50px;
+    height: 26px;
+    border-radius: 50px;
+    background-color: #000;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 5px;
+    transform: scale(1.1);
 }
 
-article p {
-    font-size: 18px;
-    margin: 25px 0;
-    color: var(--darkgrey);
+.ball {
+    width: 20px;
+    height: 20px;
+    background-color: var(--background);
+    position: absolute;
+    top: 3px;
+    border-radius: 50%;
+    transition: all 0.25s ease-in-out;
 }
 
+.fa-moon {
+    color: var(--clr-primary);
+}
+
+.fa-sun {
+    color: var(--clr-sun);
+}
+
+.ball-position {
+    left: 6%;
+    transition: left 0.25s ease-in-out;
+}
+
+.darkmode .ball-position {
+    left: 54%;
+    -webkit-animation: none;
+    animation: none;
+}
 
 /* Container Home's Hero */
 
@@ -134,8 +167,6 @@ article p {
     padding: 0px 10%;
     min-height: 100vh;
 }
-
-
 
 .home-container {
     display: flex;
@@ -147,9 +178,8 @@ article p {
     justify-content: flex-end;
 }
 
-
 .home-item .subtitle {
-    color: var(--blue);
+    color: var(--clr-primary);
     font-size: 50px;
     font-weight: 700;
     letter-spacing: 2px;
@@ -157,11 +187,20 @@ article p {
 
 .home-item h1 {
     font-size: 20px;
-    color: var(--darkgrey);
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: var(--foreground);
 }
 
 .home-item .hi-emoji {
     font-size: 40px;
+}
+
+.home-item p {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 25px 0;
+    color: var(--foreground);
 }
 
 .home-item img {
@@ -176,7 +215,6 @@ article p {
 .home-item img:hover {
     opacity: 1;
 }
-
 
 /* Contact Container */
 
@@ -205,16 +243,16 @@ article p {
 
 .contact-item p {
     font-size: 17px;
-    color: var(--darkgrey);
+    color: var(--clr-darkgrey);
 }
 
 .contact-item h2 {
-    color: var(--darkgrey);
+    color: var(--clr-darkgrey);
 }
 
 #contact a {
     text-decoration: none;
-    color: var(--blue);
+    color: var(--clr-primary);
     font-weight: 500;
     transition: all 0.3s ease 0s;
 }
@@ -223,17 +261,104 @@ article p {
     letter-spacing: 1px;
 } */
 
-
 /* Footer */
 
 footer {
-    background-color: var(--blue);
+    background-color: #14539a;
     padding: 30px 0px;
 }
 
 footer p {
     text-align: center;
     font-size: 14px;
-    color: whitesmoke;
+    color: var(--clr-light);
     letter-spacing: 0.5px;
+}
+
+/* Responsive Breakpoint */
+
+/* ukuran tablet */
+@media screen and (max-width: 768px) {
+    /* Header */
+    header > a:first-child {
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+    }
+
+    /* Home Container */
+
+    .home-container {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .home-container h1 {
+        font-size: 18px;
+    }
+
+    .home-container .subtitle {
+        font-size: 35px;
+        letter-spacing: 0.2px;
+    }
+
+    .home-container .hi-emoji {
+        font-size: 25px;
+    }
+
+    .home-container p {
+        font-size: 16px;
+    }
+}
+
+/* ukuran mobile */
+@media screen and (max-width: 576px) {
+    /* Home Container */
+
+    .home-item h1 {
+        margin-top: 40px;
+    }
+
+    .home-item .subtitle {
+        font-size: 27px;
+    }
+
+    .home-item p {
+        font-size: 15px;
+        margin: 15px 0;
+    }
+
+    .home-item img {
+        margin-top: 8px;
+        height: 25px;
+    }
+
+    /* Aside Container */
+    /* aside header {
+        flex-direction: column;
+        padding: 40px 7%;
+        align-items: center;
+    }
+
+    aside header h2 {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    aside header a.button {
+        margin: 0 0 15px 0;
+    } */
+
+    /* Contact Container */
+    /* .contact-container {
+        justify-content: center;
+    }
+
+    .contact-container .contact-item {
+        width: 100%;
+    }
+
+    .contact-item img {
+        margin: 20px 10px 0 10px;
+    } */
 }
