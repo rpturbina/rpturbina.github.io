@@ -203,9 +203,15 @@ nav li {
     color: var(--foreground);
 }
 
-.home-item img {
+.home-item > a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
     margin-top: 15px;
     margin-right: 20px;
+}
+
+.home-item img {
     height: 30px;
     cursor: pointer;
     opacity: 0.5;
@@ -328,11 +334,16 @@ footer p {
         margin: 15px 0;
     }
 
-    .home-item img {
+    .home-item > a {
         margin-top: 8px;
         height: 25px;
+        width: 25px;
     }
 
+    .home-item img {
+        height: inherit;
+        width: inherit;
+    }
     /* Aside Container */
     /* aside header {
         flex-direction: column;
