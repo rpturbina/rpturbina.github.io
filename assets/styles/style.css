@@ -3,7 +3,7 @@
 :root {
     --clr-light: #fff;
     --clr-dark: #36363c;
-    --clr-primary: #14539a;
+    --clr-primary: #175092;
     --clr-sun: #fdd641;
 
     --foreground: var(--clr-dark);
@@ -269,13 +269,13 @@ nav li {
 /* Footer */
 
 footer {
-    background-color: #14539a;
+    background-color: #175092;
     padding: 30px 0px;
 }
 
 footer p {
     text-align: center;
-    font-size: 14px;
+    font-size: 15px;
     color: var(--clr-light);
     letter-spacing: 0.5px;
 }
