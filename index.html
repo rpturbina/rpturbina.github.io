@@ -3,10 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta
-            name="description"
-            content="Personal Website by Rizki Pratama Turbina"
-        />
+        <meta name="description" content="Personal Website by Rizki Pratama Turbina" />
         <meta
             name="keywords"
             content="Personal Website by Rizki Pratama Turbina, rpturbina personal website"
@@ -23,10 +20,7 @@
         />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="rpturbina" />
-        <meta
-            name="twitter:description"
-            content="Personal Website by Rizki Pratama Turbina"
-        />
+        <meta name="twitter:description" content="Personal Website by Rizki Pratama Turbina" />
         <meta name="twitter:creator" content="rpturbina" />
         <link rel="stylesheet" href="/assets/styles/style.css" />
         <link
@@ -35,131 +29,117 @@
             href="https://avatars.githubusercontent.com/u/75988104?v=4"
         />
     </head>
-    <body class="">
-        <header class="navbar">
-            <div class="logo-wrapper">
-                <a href="#home">
-                    <img
-                        src="assets/image/profil-picture-pratama.jpg"
-                        class="logo"
-                        alt="Go to my home's website"
-                    />
-                </a>
-            </div>
-            <a class="darkmode-toggle">
-                <i class="fas fa-moon"></i>
-                <i class="fas fa-sun"></i>
-                <div class="ball ball-position"></div>
-            </a>
-            <nav>
-                <ul>
-                    <!-- <li><a href="#about-me">About</a></li>
-                        <li><a href="#project">Project</a></li>
-                        <li><a href="#contact">Contact</a></li> -->
-                    <li>
-                        <a
-                            href="https://bit.ly/resume-pratama"
-                            target="_blank"
-                            rel="noreferrer"
-                            class="button"
-                            >Resume</a
-                        >
-                    </li>
-                </ul>
+    <body>
+        <header class="header">
+            <nav class="container navbar">
+                <h1>
+                    <a href="#home" class="author-logo">rpturbina</a>
+                </h1>
+                <ul class="navlinks navlinks-desktop navlinks-hide"></ul>
+                <div class="hamburger-wrapper">
+                    <ul class="hamburger hamburger-open">
+                        <li><span class="hamburger-bar"></span></li>
+                        <li><span class="hamburger-bar"></span></li>
+                        <li><span class="hamburger-bar"></span></li>
+                    </ul>
+                </div>
             </nav>
+            <nav class="navbar-mobile">
+                <div class="hamburger-wrapper">
+                    <svg
+                        class="hamburger hamburger-close"
+                        viewBox="0 0 32 32"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                    >
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill: none;
+                                }
+                            </style>
+                        </defs>
+                        <title />
+                        <g data-name="Layer 2" id="Layer_2">
+                            <path
+                                d="M4,29a1,1,0,0,1-.71-.29,1,1,0,0,1,0-1.42l24-24a1,1,0,1,1,1.42,1.42l-24,24A1,1,0,0,1,4,29Z"
+                            />
+                            <path
+                                d="M28,29a1,1,0,0,1-.71-.29l-24-24A1,1,0,0,1,4.71,3.29l24,24a1,1,0,0,1,0,1.42A1,1,0,0,1,28,29Z"
+                            />
+                        </g>
+                        <g id="frame"><rect class="cls-1" height="32" width="32" /></g>
+                    </svg>
+                </div>
+                <ul class="navlinks navlinks-mobile"></ul>
+            </nav>
+            <div class="overlay"></div>
         </header>
         <main>
-            <article id="home" class="card home-container">
-                <div class="home-item content">
-                    <h1>
-                        Hi <span class="hi-emoji">👋</span>, my name is <br />
-                        <span class="subtitle">Rizki Pratama Turbina.</span>
-                    </h1>
-                    <p>
-                        I'm a
-                        <strong
-                            >final year undergraduate engineering physics
-                            student</strong
+            <section class="outer-container">
+                <article id="home" class="container hero">
+                    <img
+                        src="/assets/images/author-photo-hero.png"
+                        alt="rpturbina photo"
+                        class="hero-author-photo"
+                    />
+                    <h2>&#60; Hello World👋! &#47;&#62;</h2>
+                    <h3 class="hero-author-name">I'm R. Pratama Turbina</h3>
+                    <p class="hero-description">
+                        <strong>Frontend Web Enthusiast</strong> | Bring my frontend experiences to
+                        solve problems
+                    </p>
+                </article>
+            </section>
+            <section class="outer-container">
+                <article id="portfolio" class="container portfolio">
+                    <h2 class="portfolio-title">&#60; Things I've built &#47;&#62;</h2>
+                    <div class="projects"></div>
+                </article>
+            </section>
+            <section class="outer-container">
+                <article id="contact" class="container contact">
+                    <h2 class="contact-title">&#60; Let's get connected! &#47;&#62;</h2>
+                    <p class="contact-description">
+                        I'm currently open for any new opportunites. If you have any questions or
+                        just to say hello, please go ahead!
+                        <br />
+                        I will try my best to reply your message.
+                    </p>
+                    <ul class="contact-items"></ul>
+                </article>
+            </section>
+            <section class="outer-container">
+                <aside id="about" class="container identity">
+                    <img
+                        src="/assets/images/author-photo-hero.png"
+                        alt="rpturbina photo"
+                        class="hero-author-photo"
+                    />
+                    <h2>Rizki Pratama Turbina</h2>
+                    <p><strong>Frontend Web Enthusiast</strong></p>
+                    <p class="identity-item">
+                        <a href="mailto:rizki.pratama.turbina@gmail.com"
+                            >rizki.pratama.turbina@gmail.com</a
                         >
-                        from <strong> Universitas Gadjah Mada</strong>,
-                        currently conducting research for my undergraduate
-                        thesis.
                     </p>
-                    <p>
-                        I'm also a person who have <em>high curiosity</em>,
-                        <em>love to explore</em> and
-                        <em>find out whatever I'm interested in</em>, and
-                        <em>love to learn new things</em>, especially about
-                        <strong>frontend web development</strong>, so that I can
-                        <strong>help in solving problems</strong> by leveraging
-                        my experience and knowledge. Currently building my
-                        career in
-                        <strong>software engineering (frontend). </strong>
+                    <p class="identity-item">
+                        <strong>Location:</strong>
+                        <a href="https://goo.gl/maps/5fRTgKVMSr4UQbWH7" target="_blank">
+                            Yogyakarta, Indonesia
+                        </a>
                     </p>
-                    <div class="home-item icon">
-                        <a
-                            href="https://github.com/rpturbina"
-                            target="_blank"
-                            rel="noreferrer"
-                            ><img
-                                width="30"
-                                height="30"
-                                src="assets/image/github.svg"
-                                alt="Go to my github"
-                        /></a>
-                        <a
-                            href="https://www.linkedin.com/in/rpturbina"
-                            target="_blank"
-                            rel="noreferrer"
-                            ><img
-                                width="30"
-                                height="30"
-                                src="assets/image/linkedin.svg"
-                                alt="Go to my linkedin"
-                        /></a>
-                        <a
-                            href="https://www.instagram.com/rpturbina/"
-                            target="_blank"
-                            rel="noreferrer"
-                            ><img
-                                width="30"
-                                height="30"
-                                src="assets/image/instagram.svg"
-                                alt="Go to my instagram"
-                        /></a>
-                        <a
-                            href="mailto:rizki.pratama.turbina@gmail.com"
-                            target="_blank"
-                            ><img
-                                width="30"
-                                height="30"
-                                src="assets/image/email.png"
-                                alt="Send email to me"
-                        /></a>
-                    </div>
-                </div>
-            </article>
-            <!-- <aside>
-                <div id="contact" class="card contact-container">
-                    <div class="contact-item content">
-                        <h2>Get in touch</h2>
-                        <p>
-                            For business inquiry please send email to
-                            <a href="mailto:rizki.pratama.turbina@gmail.com"
-                                >rizki.pratama.turbina@gmail.com</a
-                            >.
-                        </p>
-                    </div>
-                </div>
-            </aside> -->
+                </aside>
+            </section>
         </main>
-        <footer>
-            <p>Made with 🤍 by rpturbina © 2022</p>
+        <footer class="footer">
+            <p id="copyright"></p>
+            <p>
+                <a href="https://github.com/rpturbina" target="_blank">
+                    <strong>Find me!</strong>
+                </a>
+            </p>
         </footer>
-        <script
-            src="https://kit.fontawesome.com/39b200de84.js"
-            crossorigin="anonymous"
-        ></script>
-        <script src="src/script.js"></script>
+        <script type="module" src="/assets/js/index.js"></script>
     </body>
 </html>
