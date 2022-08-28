@@ -141,8 +141,8 @@ PROJECT_ITEMS.forEach((item) => {
     projecsWrapper.appendChild(projectItem);
 });
 
-// Customize styling for portofolio section
-const portofolioTitle = document.querySelector('.portofolio-title');
+// Customize styling for portfolio section
+const portfolioSection = document.getElementById('portfolio');
 if (PROJECT_ITEMS.length > 3) {
-    portofolioTitle.style.paddingTop = '90px';
+    portfolioSection.style.paddingTop = '90px';
 }

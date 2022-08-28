@@ -13,8 +13,8 @@ export const NAV_ITEMS = [
         href: '#home',
     },
     {
-        label: 'Portofolio',
-        href: '#portofolio',
+        label: 'Portfolio',
+        href: '#portfolio',
     },
     {
         label: 'Contact',
