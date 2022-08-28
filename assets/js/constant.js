@@ -1,3 +1,5 @@
+const BASE_DOMAIN = 'rpturbina.me';
+
 export const WEBSITE_IDENTITY = {
     author: 'rpturbina',
     title: 'rpturbina | Personal Website',
@@ -51,20 +53,28 @@ export const CONTACT_ITEMS = [
 // Project items
 export const PROJECT_ITEMS = [
     {
+        title: 'UrSpotify App (Generasi Gigih 2.0 Final Project)',
+        description:
+            'UrSpotify is a web-based application that can create playlists for the Spotify app easily. This app consume Spotify Web API.',
+        stack: 'React.js, Chakra UI',
+        'project-repo': 'https://github.com/rpturbina/homework-spotify-app',
+        'project-demo': `https://urspotify.${BASE_DOMAIN}/`,
+    },
+    {
         title: 'Tribute Page - B. J. Habibie',
         description:
             "I built this page for tribute and sharing about B. J. Habibie's life timeline and to complete the freeCodeCamp course about Responsive Web Design.",
         stack: 'HTML, CSS',
         'project-repo': 'https://github.com/rpturbina/fcc-tribute-page',
-        'project-demo': 'https://rpturbina.github.io/fcc-tribute-page',
+        'project-demo': `https://${BASE_DOMAIN}/fcc-tribute-page`,
     },
     {
         title: 'Survey Form - freeCodeCamp',
         description:
             'I built this survey form for completing the freeCodeCamp course about Responsive Web Design.',
         stack: 'HTML, CSS, JavaScript',
-        'project-repo': 'https://rpturbina.github.io/fcc-survey-form',
-        'project-demo': 'https://github.com/rpturbina/fcc-survey-form',
+        'project-repo': 'https://github.com/rpturbina/fcc-survey-form',
+        'project-demo': `https://${BASE_DOMAIN}/fcc-survey-form`,
     },
     {
         title: 'JavaScript Documentation Page',
@@ -72,6 +82,6 @@ export const PROJECT_ITEMS = [
             'I built this technical documentation page for completing the freeCodeCamp course about Responsive Web Design.',
         stack: 'HTML, CSS, JavaScript',
         'project-repo': 'https://github.com/rpturbina/fcc-technical-doc/',
-        'project-demo': 'https://rpturbina.github.io/fcc-technical-doc/',
+        'project-demo': `https://${BASE_DOMAIN}/fcc-technical-doc/`,
     },
 ];
