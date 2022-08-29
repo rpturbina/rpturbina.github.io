@@ -179,6 +179,7 @@ body::-webkit-scrollbar {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    min-height: 640px;
 }
 .hero-author-name {
     text-align: center;
@@ -187,7 +188,8 @@ body::-webkit-scrollbar {
 }
 .hero-author-photo {
     max-width: 250px;
-    padding-bottom: 2em;
+    margin-bottom: 2em;
+    border-radius: 50%;
 }
 .hero-description {
     text-align: center;
@@ -284,6 +286,7 @@ body::-webkit-scrollbar {
     justify-content: center;
     align-items: center;
     row-gap: 0.5rem;
+    min-height: 640px;
 }
 
 .identity-item {
@@ -357,5 +360,23 @@ body::-webkit-scrollbar {
 @media screen and (min-width: 1024px) {
     .project-item {
         flex-basis: calc(95% / 3);
+    }
+}
+
+@media screen and (orientation: landscape) and (min-height: 640px) {
+    .hero {
+        min-height: 100vh;
+    }
+    .identity {
+        min-height: 100vh;
+    }
+}
+
+@media screen and (orientation: portrait) {
+    .hero {
+        min-height: 100vh;
+    }
+    .identity {
+        min-height: 100vh;
     }
 }

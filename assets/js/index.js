@@ -11,11 +11,11 @@ window.addEventListener('scroll', () => {
 
     const headNavbar = document.querySelector('.header');
 
-    if (window.scrollY > 120) {
+    if (window.scrollY > 90) {
         headNavbar.classList.add('header-shadow');
         //  = '0.5rem 0 2rem 0 hsla(0, 0%, 0%, 0.2)';
     }
-    if (window.scrollY < 120) {
+    if (window.scrollY < 90) {
         headNavbar.classList.remove('header-shadow');
         // headNavbar.style['box-shadow'] = 'none';
     }
