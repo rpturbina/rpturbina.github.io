@@ -1,0 +1,23 @@
+{
+    "devDependencies": {
+        "tailwindcss": "^3.1.8"
+    },
+    "name": "rpturbina.github.io",
+    "description": "My Personal Website!",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "tailwind": "npx tailwindcss -i ./src/styles/global.css -o ./src/styles/style.css --watch --minify"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/rpturbina/rpturbina.github.io.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/rpturbina/rpturbina.github.io/issues"
+    },
+    "homepage": "https://github.com/rpturbina/rpturbina.github.io"
+}
