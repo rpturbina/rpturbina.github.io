@@ -3,7 +3,7 @@ const BASE_DOMAIN = 'rpturbina.me';
 export const WEBSITE_IDENTITY = {
     author: 'rpturbina',
     title: 'rpturbina | Personal Website',
-    copyright: `© ${new Date().getFullYear()} by Rizki Pratama Turbina. All rights reserved.`,
+    copyright: `©${new Date().getFullYear()} by Rizki Pratama Turbina. All rights reserved.`,
 };
 
 // Nav items
@@ -30,22 +30,22 @@ export const NAV_ITEMS = [
 export const CONTACT_ITEMS = [
     {
         label: 'Github Icon',
-        iconSrc: 'assets/images/github-icon.svg',
+        iconSrc: '/src/images/github-icon.svg',
         href: 'https://github.com/rpturbina',
     },
     {
         label: 'LinkedIn Icon',
-        iconSrc: 'assets/images/linkedin-icon.svg',
+        iconSrc: '/src/images/linkedin-icon.svg',
         href: 'https://www.linkedin.com/in/rpturbina/',
     },
     {
         label: 'Instagram Icon',
-        iconSrc: 'assets/images/instagram-icon.svg',
+        iconSrc: '/src/images/instagram-icon.svg',
         href: 'https://www.instagram.com/rpturbina/',
     },
     {
         label: 'Email Icon',
-        iconSrc: 'assets/images/email-icon.svg',
+        iconSrc: '/src/images/email-icon.svg',
         href: 'mailto:rizki.pratama.turbina@gmail.com',
     },
 ];

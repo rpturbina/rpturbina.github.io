@@ -29,32 +29,40 @@
         <meta name="twitter:title" content="rpturbina" />
         <meta name="twitter:description" content="Personal Website by Rizki Pratama Turbina." />
         <meta name="twitter:creator" content="rpturbina" />
-        <link rel="stylesheet" href="/assets/styles/style.css" />
+        <link rel="stylesheet" href="/src/styles/style.css" />
         <link
             rel="icon"
             type="image/png"
             href="https://avatars.githubusercontent.com/u/75988104?v=4"
         />
     </head>
-    <body>
-        <header class="header">
-            <nav class="container navbar">
+    <body class="relative bg-white overflow-x-hidden">
+        <header class="fixed z-10 top-0 left-0 right-0 bg-white transition-all header">
+            <nav class="flex justify-between items-center navbar max-w-7xl m-auto px-4 h-16 navbar">
                 <h1>
-                    <a href="#home" class="author-logo">rpturbina</a>
+                    <a
+                        href="#home"
+                        class="author-logo opacity-80 text-xl block transition-all hover:opacity-100 font-bold"
+                        >rpturbina</a
+                    >
                 </h1>
-                <ul class="navlinks navlinks-desktop navlinks-hide"></ul>
-                <div class="hamburger-wrapper">
-                    <ul class="hamburger hamburger-open">
+                <ul class="sm:flex sm:gap-x-12 navlinks navlinks-desktop hidden"></ul>
+                <div class="grid items-center justify-end h-16 sm:hidden">
+                    <ul
+                        class="opacity-70 cursor-pointer flex flex-col gap-y-1 justify-center transition-all hover:opacity-100 hover:text-black hamburger-open"
+                    >
                         <li><span class="hamburger-bar"></span></li>
                         <li><span class="hamburger-bar"></span></li>
                         <li><span class="hamburger-bar"></span></li>
                     </ul>
                 </div>
             </nav>
-            <nav class="navbar-mobile">
-                <div class="hamburger-wrapper">
+            <nav
+                class="navbar-mobile fixed z-20 min-h-screen bottom-0 top-0 bg-white w-64 -right-64 px-4 transition-all"
+            >
+                <div class="grid items-center justify-end h-16">
                     <svg
-                        class="hamburger hamburger-close"
+                        class="opacity-70 cursor-pointer flex flex-col gap-y-1 justify-center transition-all hover:opacity-100 hover:text-black hamburger-close"
                         viewBox="0 0 32 32"
                         xmlns="http://www.w3.org/2000/svg"
                         width="25"
@@ -78,61 +86,78 @@
                         <g id="frame"><rect class="cls-1" height="32" width="32" /></g>
                     </svg>
                 </div>
-                <ul class="navlinks navlinks-mobile"></ul>
+                <ul
+                    class="navlinks navlinks-mobile flex text-right flex-col gap-y-8 mt-8 transition-all"
+                ></ul>
             </nav>
-            <div class="overlay"></div>
+            <div
+                class="overlay fixed z-10 hidden w-full h-full top-0 left-0 right-0 bottom-0 bg-black opacity-50"
+            ></div>
         </header>
         <main>
             <section class="outer-container">
-                <article id="home" class="container hero">
+                <article id="home" class="max-w-7xl min-h-screen m-auto px-4 hero">
                     <img
-                        src="/assets/images/author-photo-hero.webp"
+                        src="/src/images/author-photo-hero.webp"
                         alt="rpturbina photo"
-                        class="hero-author-photo"
-                        width="250"
+                        class="w-64 mb-8 rounded-full"
                     />
-                    <h2>&#60; Hello World👋! &#47;&#62;</h2>
-                    <h3 class="hero-author-name">I'm R. Pratama Turbina</h3>
-                    <p class="hero-description">
+                    <h2 class="text-2xl md:text-3xl font-semibold">
+                        &#60; Hello World👋! &#47;&#62;
+                    </h2>
+                    <h3 class="text-center text-2xl sm:text-3xl font-bold">
+                        I'm R. Pratama Turbina
+                    </h3>
+                    <p class="text-center">
                         <strong>Frontend Web Enthusiast</strong> | Bring my frontend experiences to
                         solve problems
                     </p>
                 </article>
             </section>
             <section class="outer-container">
-                <article id="portfolio" class="container portfolio">
-                    <h2 class="portfolio-title">&#60; Things I've built &#47;&#62;</h2>
-                    <div class="projects"></div>
+                <article
+                    id="portfolio"
+                    class="max-w-7xl min-h-screen m-auto px-4 flex flex-col justify-center py-24 md:pt-0"
+                >
+                    <h2 class="text-2xl md:text-3xl font-bold text-center mb-8">
+                        &#60; Things I've built &#47;&#62;
+                    </h2>
+                    <div class="projects md:flex md:gap-6 md:flex-wrap md:justify-between"></div>
                 </article>
             </section>
             <section class="outer-container">
-                <article id="contact" class="container contact">
-                    <h2 class="contact-title">&#60; Let's get connected! &#47;&#62;</h2>
-                    <p class="contact-description">
+                <article
+                    id="contact"
+                    class="max-w-7xl min-h-screen m-auto px-4 flex flex-col items-center justify-center gap-y-4"
+                >
+                    <h2 class="text-center text-2xl md:text-3xl font-bold">
+                        &#60; Let's get connected! &#47;&#62;
+                    </h2>
+                    <p class="text-center">
                         I'm currently open for any new opportunites. If you have any questions or
                         just to say hello, please go ahead!
                         <br />
                         I will try my best to reply your message.
                     </p>
-                    <ul class="contact-items"></ul>
+                    <ul class="contact-items flex justify-between gap-x-3"></ul>
                 </article>
             </section>
             <section class="outer-container">
-                <aside id="about" class="container identity">
+                <aside id="about" class="max-w-7xl min-h-screen m-auto px-4 identity">
                     <img
-                        src="/assets/images/author-photo-hero.webp"
+                        src="/src/images/author-photo-hero.webp"
                         alt="rpturbina photo"
-                        class="hero-author-photo"
+                        class="w-64 mb-8 rounded-full"
                         width="250"
                     />
-                    <h2>Rizki Pratama Turbina</h2>
-                    <p>Frontend Web Enthusiast</p>
-                    <p class="identity-item">
+                    <h2 class="text-2xl font-bold">Rizki Pratama Turbina</h2>
+                    <p class="text-md font-semibold">Frontend Web Enthusiast</p>
+                    <p class="opacity-70 transition-all hover:opacity-100">
                         <a href="mailto:rizki.pratama.turbina@gmail.com"
                             >rizki.pratama.turbina@gmail.com</a
                         >
                     </p>
-                    <p class="identity-item">
+                    <p class="opacity-70 transition-all hover:opacity-100">
                         <strong>Location:</strong>
                         <a href="https://goo.gl/maps/5fRTgKVMSr4UQbWH7" target="_blank">
                             Yogyakarta, Indonesia
@@ -149,6 +174,6 @@
                 </a>
             </p>
         </footer>
-        <script type="module" src="/assets/js/index.js"></script>
+        <script type="module" src="/src/js/index.js"></script>
     </body>
 </html>

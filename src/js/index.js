@@ -99,6 +99,7 @@ CONTACT_ITEMS.forEach((item) => {
 // Generate project items
 const generateProjectItem = (projectItem) => {
     const projectTitle = document.createElement('h3');
+    projectTitle.classList.add('project-title');
     projectTitle.textContent = projectItem.title;
 
     const projectDescription = document.createElement('p');
@@ -112,14 +113,14 @@ const generateProjectItem = (projectItem) => {
     projectLink.innerHTML = `
     <a href="${projectItem['project-repo']}" title="Go to project repository" target="_blank">
         <img
-            src="assets/images/github-icon.svg"
+            src="/src/images/github-icon.svg"
             width="30"
             alt="Github Icon"
         />
     </a>
     <a href=${projectItem['project-demo']} title="Go to project live demo" target="_blank">
         <img
-            src="assets/images/share-icon.svg"
+            src="/src/images/share-icon.svg"
             width="30"
             alt="Share Icon"
         />  
@@ -144,5 +145,5 @@ PROJECT_ITEMS.forEach((item) => {
 // Customize styling for portfolio section
 const portfolioSection = document.getElementById('portfolio');
 if (PROJECT_ITEMS.length > 3) {
-    portfolioSection.style.paddingTop = '90px';
+    portfolioSection.style.paddingTop = '96px';
 }
